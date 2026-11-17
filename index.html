@@ -24,7 +24,6 @@
 
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
-  <div class="noise" aria-hidden="true"></div>
   <div class="cursor-glow" aria-hidden="true"></div>
   <header class="site-header" id="top">
     <div class="nav-inner wrap">
@@ -37,7 +36,7 @@
           title="Toggle colour theme"><span class="theme-icon">☼</span></button><a class="nav-cta"
           href="assets/docs/Bryce-Milbank-Developer-CV.pdf" download>Download CV <span aria-hidden="true">↗</span></a><button
           class="menu-toggle icon-button" type="button" aria-expanded="false" aria-controls="mobile-menu"
-          aria-label="Open menu"><span></span><span></span></button></div>
+          aria-label="Open menu"><span></span><span></span><span></span></button></div>
     </div>
     <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation" hidden><a href="#about">About</a><a
         href="#work">Projects</a><a href="#expertise">Expertise</a><a href="#contact">Contact</a><a
@@ -51,7 +50,7 @@
         <h1 class="hero-title enter" id="hero-title">Building <span class="serif-tilt">digital</span><br>things that
           <span class="text-outline">matter<span class="period">.</span></span></h1>
         <p class="hero-lede enter">Hi, I'm <strong>Bryce Milbank.</strong> A software developer who loves turning
-          complex ideas into straightforward experiences - from web applications to Android.</p>
+          complex ideas into straightforward, considered experiences — from web applications to Android.</p>
         <div class="hero-buttons enter"><a href="#work" class="button button-primary">Explore my work
             <span>↗</span></a><a href="#contact" class="button button-secondary">Let's connect <span>→</span></a></div>
         <div class="hero-meta enter">
@@ -117,9 +116,9 @@
         </div>
         <div class="about-side reveal">
           <div class="portrait-frame"><img src="assets/img/profile.jpeg" alt="Portrait of Bryce Milbank" width="720"
-              height="720" loading="lazy"><span class="portrait-corner top-left"></span><span
+              height="520" loading="lazy"><span class="portrait-corner top-left"></span><span
               class="portrait-corner bottom-right"></span>
-            <div class="portrait-tag">BAIT GRADUATE / 2026</div>
+            <div class="portrait-tag">BA IT GRADUATE / 2026</div>
           </div>
           <div class="education-note"><span>EDUCATION</span><strong>Bachelor of Applied Information
               Technology</strong><small>Toi Ohomai Institute of Technology · 2026</small><small>NZ Diploma in Software
@@ -153,7 +152,7 @@
             <div class="project-details">
               <div class="project-header">
                 <div><span class="project-number">PROJECT 01 / FULL-STACK</span>
-                  <h3>LensFlow <span>↗</span></h3>
+                  <h3>LensFlow</h3>
                 </div><span class="project-year">2026</span>
               </div>
               <p>A complete photography business management platform built with a real stakeholder, from bookings and
@@ -180,7 +179,7 @@
             <div class="project-details">
               <div class="project-header">
                 <div><span class="project-number">PROJECT 02 / CROSS-PLATFORM</span>
-                  <h3>TestNest <span>↗</span></h3>
+                  <h3>TestNest</h3>
                 </div><span class="project-year">2024–25</span>
               </div>
               <p>A multiple-choice testing platform with a React web app and React Native Android app connected to the
@@ -192,20 +191,13 @@
           <article class="project-card reveal" data-categories="research"><a class="project-art art-ml"
               href="project.html?id=machine-learning" aria-label="Explore machine learning project">
               <div class="art-topline"><span>03 / MACHINE LEARNING</span><span>2026</span></div>
-              <div class="ml-visual">
-                <div class="ml-axis">
-                  <div class="ml-line"></div>
-                  <div class="ml-dots"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
-                </div>
-                <div class="ml-legend"><span>NEURAL NETWORK</span><strong>83.3%</strong><small>Evaluation
-                    accuracy</small></div>
-              </div>
+              <div class="evidence-preview evidence-ml"><div class="evidence-caption"><span>MODEL EVALUATION</span><strong>83.33%</strong><small>MLP test accuracy</small></div><img src="assets/img/machine-learning/neural-confusion.webp" alt="Actual neural network confusion matrix from machine learning coursework" loading="lazy" /></div>
               <div class="art-bottomline"><span>DATA → INSIGHT</span><span>↗</span></div>
             </a>
             <div class="project-details">
               <div class="project-header">
                 <div><span class="project-number">PROJECT 03 / DATA SCIENCE</span>
-                  <h3>Machine Learning <span>↗</span></h3>
+                  <h3>Machine Learning</h3>
                 </div>
               </div>
               <p>Compared decision trees, K-Means and a neural network on a heart disease dataset, evaluating model
@@ -217,33 +209,22 @@
           <article class="project-card reveal" data-categories="research"><a class="project-art art-security"
               href="project.html?id=security" aria-label="Explore network security project">
               <div class="art-topline"><span>04 / CYBERSECURITY</span><span>2026</span></div>
-              <div class="security-visual">
-                <div class="radar">
-                  <div class="radar-cross"></div><i class="radar-point a"></i><i class="radar-point b"></i><i
-                    class="radar-point c"></i>
-                </div>
-                <div class="security-logs"><span>● MONITORING ACTIVE</span>
-                  <p><b>ALERT</b> Traffic anomaly detected</p>
-                  <p><b>LOG</b> Network event analysed</p>
-                  <p><b>SCAN</b> Rule match reviewed</p>
-                </div>
-              </div>
+              <div class="evidence-preview evidence-sec"><div class="evidence-caption"><span>T-POT / THREAT INTELLIGENCE</span><strong>600k+</strong><small>recorded events</small></div><img src="assets/img/security/tpot-dashboard.webp" alt="T-Pot threat activity dashboard from the network security investigation" loading="lazy" /></div>
               <div class="art-bottomline"><span>OBSERVE. ANALYSE. DEFEND.</span><span>↗</span></div>
             </a>
             <div class="project-details">
               <div class="project-header">
                 <div><span class="project-number">PROJECT 04 / SECURITY</span>
-                  <h3>Network Security <span>↗</span></h3>
+                  <h3>Network Security</h3>
                 </div>
               </div>
-              <p>Investigated network activity and security alerts using Suricata and Elastic as part of hands-on
-                security coursework.</p>
-              <div class="tag-row"><span>Suricata</span><span>Elastic</span><span>Analysis</span></div><a
+              <p>Audited an OpenMediaVault lab host and analysed 600,000+ T-Pot honeypot events using Elastic and security tools.</p>
+              <div class="tag-row"><span>T-Pot</span><span>Elastic</span><span>Nmap</span></div><a
                 class="card-link" href="project.html?id=security">View case study <span>↗</span></a>
             </div>
           </article>
         </div>
-        <p class="project-disclaimer reveal">LensFlow features actual project screenshots. Remaining project illustrations are conceptual until their own screenshots are added.</p>
+        <p class="project-disclaimer reveal">Project visuals are drawn from actual application screenshots and academic reports; the OMV risk graphic is a labelled summary of documented findings.</p>
       </div>
     </section>
     <section id="expertise" class="section expertise-section wrap" aria-labelledby="expertise-title">

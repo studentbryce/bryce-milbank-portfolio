@@ -61,7 +61,7 @@ body::before {
     right: 0;
     height: 720px;
     pointer-events: none;
-    background: radial-gradient(ellipse 700px 500px at 87% 35%, rgba(75, 115, 93, .11), transparent 80%);
+    background: radial-gradient(ellipse 700px 500px at 87% 35%, rgba(0, 255, 115, 0.11), transparent 70%);
     z-index: -1
 }
 
@@ -114,21 +114,12 @@ img {
     top: 12px
 }
 
-.noise {
-    position: fixed;
-    inset: 0;
-    pointer-events: none;
-    opacity: .025;
-    z-index: 45;
-    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.55'/%3E%3C/svg%3E")
-}
-
 .cursor-glow {
     position: fixed;
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    background: radial-gradient(circle, rgba(158, 215, 119, .065), transparent 67%);
+    background: radial-gradient(circle, rgba(102, 255, 0, 0.03), transparent 67%);
     pointer-events: none;
     z-index: 0;
     transform: translate(-50%, -50%);
@@ -932,7 +923,7 @@ img {
 }
 
 .project-art {
-    height: 305px;
+    height: 360px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -950,7 +941,6 @@ img {
 .art-bottomline {
     position: relative;
     z-index: 5;
-    height: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -2124,12 +2114,13 @@ img {
     .menu-toggle {
         display: flex;
         flex-direction: column;
-        gap: 5px
+        gap: 4px;
+        padding: 11px;
     }
 
     .menu-toggle span {
         height: 2px;
-        width: 18px;
+        width: 16px;
         background: var(--text)
     }
 
@@ -2550,7 +2541,7 @@ img {
     }
 }
 /* LensFlow: genuine product screenshots, preserving the site's existing look */
-.lensflow-preview { position:absolute; width:75%; height:70%; left:50%; top:45%; transform:translate(-50%,-50%) rotate(-4deg); background:#f8f5f0; border:1px solid #ffffff50; border-radius:10px; overflow:hidden; box-shadow:0 28px 66px #0006; transition:transform .45s ease; }
+.lensflow-preview { position:absolute; width:75%; height:68%; left:50%; top:45%; transform:translate(-50%,-50%) rotate(-3deg); background:#f8f5f0; border:1px solid #ffffff50; border-radius:10px; overflow:hidden; box-shadow:0 28px 66px #0006; transition:transform .45s ease; }
 .project-art:hover .lensflow-preview { transform:translate(-50%,-50%) rotate(-1deg) scale(1.045); }
 .lensflow-preview img { display:block; width:100%; height:calc(100% - 26px); object-fit:cover; object-position:top center; }
 .preview-chrome {height:26px; display:flex; justify-content:space-between; align-items:center; color:#5e635d; padding:0 10px; background:#faf7f1; font:9px var(--mono);gap:6px}
@@ -2579,17 +2570,35 @@ img {
 .shot-counter{font:12px var(--mono);color:var(--muted);margin-left:auto}.shot-dialog-inner{height:calc(100% - 61px);overflow:auto;display:flex;flex-direction:column;align-items:center;padding:20px;gap:18px}
 .shot-large{display:block;max-width:100%;height:auto;max-height:none;object-fit:contain;border:1px solid var(--line);background:#f8f6f2}
 .shot-description{max-width:880px;width:100%;padding-bottom:22px}.shot-description h3{font:600 24px var(--heading);margin:8px 0}.shot-description p{color:var(--muted);line-height:1.7;margin:0}
-@media(max-width:680px){.lensflow-gallery-grid{grid-template-columns:1fr}.lensflow-shot:first-child{grid-column:auto}.lensflow-shot img,.lensflow-shot:first-child img{height:180px}.detail-banner-screenshot{min-height:280px}.shot-dialog{inset:1vh 1vw;width:98vw;height:98vh}.shot-toolbar{gap:6px;padding:8px}.shot-toolbar button{padding:8px}.shot-dialog-inner{padding:10px}.lensflow-preview{width:87%}.preview-chrome{font-size:7px}}
+@media(max-width:680px){.lensflow-gallery-grid{grid-template-columns:1fr}.lensflow-shot:first-child{grid-column:auto}.lensflow-shot img,.lensflow-shot:first-child img{height:180px}.detail-banner-screenshot{min-height:280px}.shot-dialog{inset:1vh 1vw;width:98vw;height:98vh}.shot-toolbar{gap:6px;padding:8px}.shot-toolbar button{padding:8px}.shot-dialog-inner{padding:10px}.lensflow-preview{width:90%;height:62%;}.preview-chrome{font-size:7px;height:15px}}
 @media(prefers-reduced-motion:reduce){.lensflow-preview,.lensflow-shot{transition:none}}
 
 /* TestNest: actual browser and mobile screenshots */
-.testnest-showcase{position:absolute;inset:45px 28px 30px;pointer-events:none}
-.testnest-web-preview{position:absolute;left:4%;top:12%;width:70%;height:77%;overflow:hidden;border:1px solid #ffffff7d;border-radius:10px;background:#fff9e8;box-shadow:0 22px 54px #0006;transform:rotate(-5deg);transition:transform .45s ease}
+.testnest-showcase{position:absolute;inset:35px 28px 35px;pointer-events:none}
+.testnest-web-preview{position:absolute;left:4%;top:12%;width:75%;height:75%;overflow:hidden;border:1px solid #ffffff7d;border-radius:10px;background:#fff9e8;box-shadow:0 22px 54px #0006;transform:rotate(-5deg);transition:transform .45s ease}
 .testnest-web-preview img{display:block;width:100%;height:calc(100% - 26px);object-fit:cover;object-position:top center}
 .testnest-mobile-preview{position:absolute;right:2%;top:2%;height:92%;width:30%;max-width:156px;overflow:hidden;border:6px solid #211d1a;border-radius:22px;background:#fff8e4;box-shadow:0 20px 40px #0009;transform:rotate(7deg);transition:transform .45s ease}
 .testnest-mobile-preview img{display:block;width:100%;height:100%;object-fit:cover;object-position:top center}
 .testnest-speaker{position:absolute;z-index:1;top:5px;left:50%;transform:translateX(-50%);height:4px;width:25%;background:#342e29;border-radius:10px}
 .art-testnest:hover .testnest-web-preview{transform:rotate(-2deg) translateY(-5px)}
 .art-testnest:hover .testnest-mobile-preview{transform:rotate(4deg) translateY(-5px)}
-@media(max-width:680px){.testnest-showcase{inset:40px 14px 25px}.testnest-web-preview{width:76%;height:72%;top:18%;left:0}.testnest-mobile-preview{width:31%;height:83%;right:0;top:7%;border-width:4px;border-radius:15px}.testnest-speaker{top:3px}}
+@media(max-width:680px){.testnest-showcase{inset:25px 14px 45px}.testnest-web-preview{width:76%;height:72%;top:18%;left:0}.testnest-mobile-preview{width:31%;height:83%;right:0;top:7%;border-width:4px;border-radius:15px}.testnest-speaker{top:3px}}
 @media(prefers-reduced-motion:reduce){.testnest-web-preview,.testnest-mobile-preview{transition:none}}
+
+/* Research project cards now show genuine coursework evidence */
+.evidence-preview{position:absolute;inset:30px 24px 48px;display:flex;align-items:center;justify-content:center;isolation:isolate;gap:15px}
+.evidence-preview img{width:66%;max-height:94%;height:auto;object-fit:contain;display:block;background:#fff;border-radius:8px;border:1px solid #ffffffb0;box-shadow:0 22px 52px #0006;transform:rotate(-4deg);transition:transform .4s ease}
+.evidence-caption{z-index:2;width:32%;display:flex;flex-direction:column;gap:6px;color:#fff;overflow-wrap:anywhere}
+.evidence-caption span,.evidence-caption small{font:10px var(--mono);line-height:1.5;letter-spacing:.08em}
+.evidence-caption strong{font:700 clamp(25px,3vw,48px) var(--heading);letter-spacing:-.06em;color:#d7ffc1;line-height:1.04}
+.evidence-sec{flex-direction:column;gap:24px;justify-content:center}
+.evidence-sec img{width:100%;max-height:70%;transform:rotate(-2deg);border-color:#476777;background:#071927}
+.evidence-sec .evidence-caption{width:93%;display:flex;flex-direction:row;justify-content:space-between;align-items:center;gap:12px}
+.evidence-sec .evidence-caption strong{font-size:31px}
+.evidence-ml img {max-height:80%;}
+.project-art:hover .evidence-preview img{transform:rotate(-1deg) scale(1.035)}
+.detail-banner.machine-learning.detail-banner-screenshot{background:#e5e8f4 !important}
+.detail-banner.security.detail-banner-screenshot{background:#0b1a25 !important}
+.detail-banner.machine-learning .detail-cover{object-fit:contain;background:#f4f6f8;padding:24px;box-sizing:border-box}
+.detail-banner.security .detail-cover{object-fit:contain;background:#091723;padding:22px;box-sizing:border-box}
+@media(max-width:680px){.evidence-preview{inset:30px 18px 45px}.evidence-caption strong{font-size:28px}.evidence-caption span,.evidence-caption small{font-size:8px}.evidence-sec .evidence-caption strong{font-size:25px}}
